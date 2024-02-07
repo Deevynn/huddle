@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 3em;
+}
+@media (min-width:320px) and (max-width:1440px) {
+    body{
+        background-color: hsl(257, 40%, 49%);
+        background-image: url(/images/bg-mobile.svg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        
+    }
+    header img{
+        width: 8em;
+        margin-bottom: 2em;
+        
+    }
+    main img{
+        width: 90%;
+    
+    
+    }
+    article{
+text-align: center;
+        color: white;
+        line-height: 1.4em;
+    }
+    article h1{
+text-transform: capitalize;
+font-weight: 600;
+font-size: 1.3em;
+margin: 1em 0 1em 0;
+    }
+    article p{
+        font-weight: 400;
+    }
+    .register{
+        width: 9em;
+        margin: 1em auto;
+        padding: .5em 1em;
+        background-color: white;
+        border-radius: 2em;
+    }
+    .register p{
+        color:hsl(257, 40%, 49%);
+        font-size: 12px;
+    }
+    footer{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: .5em;
+    }
+    footer img{
+        width: 1em;
+        border: 1px solid white;
+        padding: .5em;
+        border-radius: 50%;
+    }
+}
+@media (min-width:769px) and (max-width:1440px) {
+    body{
+        background-image: url(/images/bg-desktop.svg);
+        background-size: 100%;
+        background-color:hsl(257, 40%, 49%) ;
+    }
+   body{
+    display: flex;
+   } 
+   header img{
+    position: absolute;
+    width: 10em;
+   }
+   main{
+    margin-top: 5em;
+   }
+   article{
+    max-width: 40%;
+text-align: justify;
+margin:auto;
+
+   }
+   article h1{
+    font-size: 2.5em;
+    line-height: 1.5em;
+   }
+   article p{
+font-size: 1.2em;
+line-height: 1.4em;
+   }
+   .register{
+    margin-left: 0;
+    text-align: center;
+    padding: .8rem 2rem;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+   }
+   .register p{
+    font-size: 1.2em;
+    
+   }
+   footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+   }
+}
